@@ -7,14 +7,14 @@ Un paquete para verificar el estado de una API.
 ## Instalación
 
 ```sh
-pip install api_status_checker
+pip install status_checker_api
 ```
 
 # Uso
 
 
 ```sh
-api-status-checker
+status-checker-api
 ```
 
 Tendra que pasar los parámetros: de la url, por ejemplo **www.google.com** y el tiempo de espera en segundos, por ejemplo **5**.

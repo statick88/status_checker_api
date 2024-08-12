@@ -9,6 +9,10 @@ def check_status(url):
     
     try:
         response = requests.get(url)
-        return response.status_code
+        status_code = response.status_code
+        if status_code == 200:
+            return "✅ La URL está activa"
+        else:
+            return "❌ La URL no está activa"
     except requests.exceptions.RequestException as e:
-        return f"Error: {e}"
+        return f"❗️ Error: {e}"
