@@ -1,8 +1,6 @@
 # API Status Checker
 
-![Example](/img/paste-5.png)
-
-Un paquete para verificar el estado de una API.
+Un paquete para verificar el estado de una API. Es necesario ingresar la URL de la API y el paquete devolverá el estado de la API.
 
 ## Instalación
 
@@ -20,6 +18,14 @@ api-status-checker
 # Ejemplo
 
 ```bash
-api-status-checker --url https://api.github.com
+api-status-checker 
+
+Ingrese la URL de la API: https://www.google.com
+
+El status de la API es: 200
 ```
 
+Este paquete es un ejemplo del curso [Curso de Django and React](https://statick88.github.io/course_of_django_and_react/)
+
+# Créditos
+- [Diego Saavedra - FullStack Developer](https://statick88.github.io)
