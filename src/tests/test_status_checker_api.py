@@ -1,11 +1,8 @@
-import unittest
-from test_status_checker_api import check_status
+import pytest
+from status_checker_api import check_status
 
-class TestApiStatusChecker(unittest.TestCase):
-
-    def test_check_status(self):
-        status = check_status('https://jsonplaceholder.typicode.com/posts')
-        self.assertEqual(status, 200)
-
-if __name__ == '__main__':
-    unittest.main()
+def test_check_status():
+    url = "https://example.com"
+    result = check_status(url)
+    assert "✅" in result  # Verifica que el mensaje de éxito esté presente en el resultado
+    assert "200" in result  # Verifica que el código de estado esté presente en el resultado

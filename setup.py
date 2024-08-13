@@ -4,8 +4,8 @@ with open('README.md', 'r', encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name='api_status_checker',
-    version='0.3',
+    name='status_checker_api',
+    version='0.5',
     packages=find_packages(where='src'),
     package_dir={'': 'src'},
     install_requires=[
@@ -13,7 +13,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'api-status-checker=api_status_checker.__main__:main',
+            'status-checker-api=status_checker_api.__main__:main',
         ],
     },
     author='Diego Saavedra',
@@ -21,7 +21,7 @@ setup(
     description='Un paquete para verificar el estado de una API.',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/statick88/api_status_checker',
+    url='https://github.com/statick88/status_checker_api',
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',

@@ -1,4 +1,4 @@
-from . import check_status
+from status_checker_api import check_status
 
 def main():
     url = input('Ingrese la URL de la API: ')
